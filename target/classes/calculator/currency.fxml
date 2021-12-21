@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.currencyController">
    <children>
       <GridPane layoutY="411.0" prefHeight="182.0" prefWidth="335.0">
@@ -27,7 +26,7 @@
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="7" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="8" GridPane.columnIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="9" GridPane.columnIndex="2" />
-            <Button mnemonicParsing="false" onMouseClicked="#clear" style="-fx-font-size: 20;" text="Button" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" onMouseClicked="#clear" style="-fx-font-size: 20; -fx-text-fill: orange;" text="AC" GridPane.columnIndex="3" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="4" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
@@ -37,12 +36,12 @@
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <Label layoutX="97.0" layoutY="39.0" prefHeight="47.0" prefWidth="141.0" style="-fx-font-size: 32;" text="Currency" />
+      <Label layoutX="97.0" layoutY="39.0" prefHeight="47.0" prefWidth="141.0" style="-fx-font-size: 32; -fx-text-fill: Orange;" text="Currency" />
       <Label layoutX="43.0" layoutY="126.0" style="-fx-font-size: 20;" text="Rupees" />
       <Label layoutX="46.0" layoutY="185.0" style="-fx-font-size: 20;" text="Pound" />
-      <Label layoutX="54.0" layoutY="234.0" style="-fx-font-size: 20;" text="Dollar" />
-      <Label fx:id="rupData" layoutX="210.0" layoutY="133.0" prefHeight="17.0" prefWidth="53.0" text="0" />
-      <Label fx:id="poData" layoutX="210.0" layoutY="192.0" prefHeight="17.0" prefWidth="53.0" text="0" />
-      <Label fx:id="dolData" layoutX="210.0" layoutY="241.0" prefHeight="17.0" prefWidth="57.0" text="0" />
+      <Label layoutX="48.0" layoutY="235.0" style="-fx-font-size: 20;" text="Dollar" />
+      <Label fx:id="rupData" layoutX="210.0" layoutY="126.0" prefHeight="17.0" prefWidth="53.0" style="-fx-font-size: 20;" text="0" />
+      <Label fx:id="poData" layoutX="210.0" layoutY="185.0" prefHeight="17.0" prefWidth="53.0" style="-fx-font-size: 20;" text="0" />
+      <Label fx:id="dolData" layoutX="210.0" layoutY="234.0" prefHeight="17.0" prefWidth="57.0" style="-fx-font-size: 20;" text="0" />
    </children>
 </Pane>

@@ -131,6 +131,30 @@ public class PrimaryController extends GridPane implements Initializable {
     }
     
     @FXML
+    ImageView Menu_6;
+    public void selectImg6() throws IOException{
+    	Parent me6 = FXMLLoader.load(getClass().getResource("length.fxml"));
+    	Stage Me6 = (Stage) Menu_6.getScene().getWindow();
+    	Me6.setScene(new Scene(me6,335,600));
+    }
+    
+    @FXML
+    ImageView Menu_7;
+    public void selectImg7() throws IOException{
+    	Parent me7 = FXMLLoader.load(getClass().getResource("area.fxml"));
+    	Stage Me7 = (Stage) Menu_7.getScene().getWindow();
+    	Me7.setScene(new Scene(me7,335,600));
+    }
+    
+    @FXML
+    ImageView Menu_8;
+    public void selectImg8() throws IOException{
+    	Parent me8 = FXMLLoader.load(getClass().getResource("volume.fxml"));
+    	Stage Me8 = (Stage) Menu_8.getScene().getWindow();
+    	Me8.setScene(new Scene(me8,335,600));
+    }
+    
+    @FXML
     ImageView Menu_9;
     public void selectImg9() throws IOException{
     	Parent me9 = FXMLLoader.load(getClass().getResource("temperature.fxml"));

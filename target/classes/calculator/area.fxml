@@ -7,22 +7,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.massController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.areaController">
    <children>
-      <Label layoutX="140.0" layoutY="50.0" style="-fx-font-size: 32; -fx-text-fill: orange;" text="Mass" />
-      <GridPane layoutX="1.0" layoutY="395.0" prefHeight="203.0" prefWidth="326.0">
-        <columnConstraints>
+      <GridPane layoutY="406.0" prefHeight="194.0" prefWidth="335.0">
+         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="7" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="8" GridPane.columnIndex="1" />
@@ -31,17 +30,18 @@
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="4" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="1" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <Label layoutX="48.0" layoutY="120.0" style="-fx-font-size: 20;" text="Grams" />
-      <Label layoutX="32.0" layoutY="175.0" style="-fx-font-size: 20;" text="Kilograms" />
-      <Label layoutX="54.0" layoutY="228.0" style="-fx-font-size: 20;" text="Tons" />
-      <Label fx:id="gramData" layoutX="198.0" layoutY="127.0" prefHeight="30.0" prefWidth="88.0" style="-fx-font-size: 20;" text="0" />
-      <Label fx:id="kiloData" layoutX="198.0" layoutY="182.0" prefHeight="30.0" prefWidth="88.0" style="-fx-font-size: 20;" text="0" />
-      <Label fx:id="tonData" layoutX="198.0" layoutY="228.0" prefHeight="30.0" prefWidth="88.0" style="-fx-font-size: 20;" text="0" />
+      <Label layoutX="135.0" layoutY="38.0" style="-fx-font-size: 32; -fx-text-fill: Orange;" text="Area" />
+      <Label layoutX="47.0" layoutY="114.0" style="-fx-font-size: 20;" text="Square meter" />
+      <Label layoutX="47.0" layoutY="157.0" style="-fx-font-size: 20;" text="Square foot" />
+      <Label layoutX="47.0" layoutY="201.0" style="-fx-font-size: 20;" text="Square yard" />
+      <Label fx:id="meterData" layoutX="217.0" layoutY="114.0" prefHeight="30.0" prefWidth="80.0" style="-fx-font-size: 20;" text="0" />
+      <Label fx:id="centiData" layoutX="217.0" layoutY="157.0" prefHeight="30.0" prefWidth="80.0" style="-fx-font-size: 20;" text="0" />
+      <Label fx:id="inchData" layoutX="217.0" layoutY="201.0" prefHeight="30.0" prefWidth="80.0" style="-fx-font-size: 20;" text="0" />
    </children>
 </Pane>

@@ -18,9 +18,9 @@ public class massController{
 	public void onClickButton(Event event)
 	{
 		 Button button = (Button) event.getSource();
-	     Double digit = Double.parseDouble(button.getText());
+	     Integer digit = Integer.parseInt(button.getText());
 	   
-	     gramData.setText(gramData.getText()+Double.toString(digit));
+	     gramData.setText(gramData.getText()+Integer.toString(digit));
 	    
 	     showOutput();
 	     
@@ -37,7 +37,7 @@ public class massController{
 	 {
 		Double val1=Double.parseDouble(gramData.getText());
 		Double res1 = val1 / 1000;
-		Double res2 = val1 / 907185;
+		Double res2 = val1 / 40000;
 		kiloData.setText(Double.toString(res1));
 		tonData.setText(Double.toString(res2));
 	 }

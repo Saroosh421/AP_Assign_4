@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.massController">
    <children>
       <Label layoutX="140.0" layoutY="50.0" style="-fx-font-size: 32; -fx-text-fill: orange;" text="Mass" />
@@ -32,9 +31,9 @@
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="4" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="7" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" onMouseClicked="#onClickButton" style="-fx-font-size: 20; -fx-background-radius: 15;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>

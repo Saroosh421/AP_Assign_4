@@ -18,9 +18,9 @@ public class speedController{
 	public void onClickButton(Event event)
 	{
 		 Button button = (Button) event.getSource();
-	     Double digit = Double.parseDouble(button.getText());
+	     Integer digit = Integer.parseInt(button.getText());
 	   
-	     speedData.setText(speedData.getText()+Double.toString(digit));
+	     speedData.setText(speedData.getText()+Integer.toString(digit));
 	    
 	     showOutput();
 	     
